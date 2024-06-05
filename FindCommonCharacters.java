@@ -27,7 +27,6 @@ public class FindCommonCharacters {
 
             if (insideCount == words.length) commonChars.add("" + currentLetter);
         }
-
         return commonChars.stream().filter(e-> !e.equals("0")).collect(Collectors.toList());
     }
 }
