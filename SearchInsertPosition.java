@@ -19,6 +19,4 @@ public class SearchInsertPosition {
         }
         return index;
     }
-
 }
-
