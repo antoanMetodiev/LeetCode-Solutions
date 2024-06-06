@@ -12,7 +12,6 @@ public class ValidAnagram {
     public static boolean isAnagram(String s, String t) {
         List<String> sLetters = Arrays.stream(s.split("")).collect(Collectors.toList());
         List<String> tLetters = Arrays.stream(t.split("")).collect(Collectors.toList());
-
         if (sLetters.size() != tLetters.size()) return false;
 
         for (int i = 0; i < sLetters.size(); i++) {
