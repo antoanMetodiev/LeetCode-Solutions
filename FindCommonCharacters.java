@@ -9,9 +9,8 @@ public class FindCommonCharacters {
     public static List<String> commonChars(String[] words) {
         List<String> commonChars = new ArrayList<>();
         List<String> inputWords = new ArrayList<>(List.of(words));
-
+        
         for (int i = 0; i < inputWords.get(0).length(); i++) {
-
             char currentLetter = inputWords.get(0).charAt(i);
             int internalCount = 0;
             for (int j = 0; j < inputWords.size(); j++) {
@@ -24,7 +23,7 @@ public class FindCommonCharacters {
                 }
                 break;
             }
-
+            
             if (internalCount == words.length) commonChars.add("" + currentLetter);
         }
         return commonChars.stream().filter(e-> !e.equals("0")).collect(Collectors.toList());
