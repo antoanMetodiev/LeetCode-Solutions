@@ -17,6 +17,5 @@ public class RemoveElement {
             }
         }
         return k;
-
     }
 }
