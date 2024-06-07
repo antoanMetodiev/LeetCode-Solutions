@@ -21,7 +21,5 @@ public class Pascal_sTriangle {
             pascalNumbers.add(numbers);
         }
         return pascalNumbers;
-        
     }
 }
-
