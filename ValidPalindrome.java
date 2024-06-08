@@ -12,8 +12,6 @@ public class ValidPalindrome {
                 .filter(letter -> (letter.charAt(0) >= 97 && letter.charAt(0) <= 122) || (letter.charAt(0) >= 48 && letter.charAt(0) <= 57))
                 .collect(Collectors.joining(""));
 
-//        System.out.println(s);
-
         return s.contentEquals(new StringBuilder(s).reverse());
     }
 }
