@@ -53,7 +53,6 @@ public class WordPattern {
             }
         }
 
-        
         return patternDataResult.equals(stringDataResult);
     }
 }
