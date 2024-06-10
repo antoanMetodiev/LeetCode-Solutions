@@ -6,12 +6,14 @@ public class AddDigits {
     }
 
     public static int addDigits(int num) {
-        while ((num + "").length() > 1) {
+        String numString = num + "";
+        while (numString.length() > 1) {
             int current = 0;
-            for (int i = 0; i < (num + "").length(); i++) {
-                current += Integer.parseInt((num + "").charAt(i) + "");
+            for (int i = 0; i < numString.length(); i++) {
+                current += Integer.parseInt((numString).charAt(i) + "");
             }
             num = current;
+            numString = "" + num;
         }
         return num;
     }
