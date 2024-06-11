@@ -7,7 +7,6 @@ public class ClearDigits {
 
     public static String clearDigits(String s) {
         StringBuilder sb = new StringBuilder(s);
-
         while (true) {
             int digitIndex = -1;
 
