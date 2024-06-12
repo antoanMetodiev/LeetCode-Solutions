@@ -6,7 +6,7 @@ public class PalindromeNumber {
     }
 
     public static boolean isPalindrome(int x) {
-        if (("" + x).contains("-")) return false;
+        if (x < 0) return false;
         return Long.parseLong(new StringBuilder("" + x).reverse().toString()) == x;
     }
 }
