@@ -10,5 +10,4 @@ public class ReverseWordsInAStringIII {
         return Arrays.stream(s.split("\\s+")).map(word -> new StringBuilder(word).reverse().toString())
                 .collect(Collectors.joining(" "));
     }
-
 }
