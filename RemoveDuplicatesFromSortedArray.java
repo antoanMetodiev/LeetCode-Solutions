@@ -15,6 +15,6 @@ public class RemoveDuplicatesFromSortedArray {
                 index++;
             }
         }
-        return j;
+        return index;
     }
 }
