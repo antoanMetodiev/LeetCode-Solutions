@@ -7,7 +7,6 @@ public class MajorityElement {
 
     public static int majorityElement(int[] nums) {
         Map<Integer, Integer> occurrences = new HashMap<>();
-
         for (int num : nums) {
             if (!occurrences.containsKey(num)) occurrences.put(num, 1);
             else occurrences.put(num, occurrences.get(num) + 1);
