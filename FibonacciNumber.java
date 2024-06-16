@@ -11,13 +11,12 @@ public class FibonacciNumber {
 
     public static int fib(int n) {
         if (n == 0) return 0;
-
         allFibNumbers.add(0);
         allFibNumbers.add(1);
+    
         for (int i = 2; i < n; i++) {
             allFibNumbers.add(getFibonacci());
         }
-
         return allFibNumbers.get(allFibNumbers.size() - 1) + allFibNumbers.get(allFibNumbers.size() - 2);
     }
 
