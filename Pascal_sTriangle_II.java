@@ -12,17 +12,13 @@ public class Pascal_sTriangle_II {
         List<List<Integer>> pascalNumbers = new ArrayList<>();
 
         for (int i = 0; i < rowIndex; i++) {
-
+            
             for (int j = 0; j <= i; j++) {
                 if (j == 0) pascalNumbers.add(new ArrayList<>(List.of(1)));
                 else if (j == i) pascalNumbers.get(i).add(1);
-                else {
-                    int currentNumber = pascalNumbers.get(i - 1).get(j - 1) + pascalNumbers.get(i - 1).get(j);
-                    pascalNumbers.get(i).add(currentNumber);
-                }
+                else pascalNumbers.get(i).add(pascalNumbers.get(i - 1).get(j - 1) + pascalNumbers.get(i - 1).get(j));
             }
         }
-
         return pascalNumbers.get(rowIndex - 1);
     }
 }
