@@ -18,7 +18,7 @@ public class ContainsDuplicate_II {
                 if (Math.abs(i - j) > k) break;
             }
         }
-
+        
         return false;
     }
 }
