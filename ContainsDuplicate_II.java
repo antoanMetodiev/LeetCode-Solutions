@@ -15,7 +15,7 @@ public class ContainsDuplicate_II {
                 if (nums[i] == nums[j] && Math.abs(i - j) <= k) {
                     return true;
                 }
-                if (Math.abs(i - j) > k) break;
+                if (Math.abs(i - j) > k) break;  // because after that, we dont need iterate more numbers
             }
         }
         
