@@ -18,7 +18,7 @@ public class IsSubsequence {
             index = t.indexOf(mainSymbol, index);
             if ((result.charAt(result.length() - 1) + "").equals(mainSymbol)) index++;
         }
-
+        
         return result.equals(s);
     }
 }
