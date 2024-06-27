@@ -18,7 +18,7 @@ public class CheckIfMatrixIsX_Matrix {
 
     private static boolean checkElsInAllOtherPlaces(int[][] grid) {
         for (int i = 0; i < grid.length; i++) {
-
+            
             if (i == 0 || i == grid.length - 1) {
                 for (int j = 1; j <= grid.length - 2; j++) {
                     if (grid[i][j] != 0) return false;
@@ -32,6 +32,7 @@ public class CheckIfMatrixIsX_Matrix {
             // we check if array have more than 2 numbers different on 0 (each array can have only 2 numbers different on 0 in this case):
             if(grid.length > 3 && Arrays.stream(grid[i]).boxed().filter(num -> num != 0).collect(Collectors.toList()).size() >= 3) return false;
         }
+        
         return true;
     }
 
