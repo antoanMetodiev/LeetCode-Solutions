@@ -11,7 +11,6 @@ public class RansomNote {
             if (magazine.contains(letter)) magazine = magazine.replaceFirst(letter, "");
             else return false;
         }
-
         return true;
     }
 }
