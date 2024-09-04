@@ -18,7 +18,7 @@ public class HappyNumber {
                 num+= Math.pow(Integer.parseInt("" + currentNumber.charAt(i)), 2);
             }
 
-            if (count++ == 10) {
+            if (count++ == 8) {
                 return false;
             }
             newNumber = num;
